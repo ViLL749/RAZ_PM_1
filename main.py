@@ -21,6 +21,7 @@ def main():
         date_str = line.strip()  # Убираем пробелы и символы новой строки
         day, month, year = map(int, date_str.split('.'))  # Разбиваем строку и преобразуем части в числа
         results += IsLeapYear(year, date_str)  # Добавляем результат к общей строке
+    print(results)
 
     label1.config(text=results)  # Обновляем текст виджета сразу со всеми результатами
 
